@@ -60,23 +60,31 @@ const studenti = [
     voti: votiRandom()
   }
 ];
+console.log(studenti)
+
+//TODO: trovare il modo per prendere l'array dei voti di ogni singolo studente
+
+//TODO: prendere gli elementi di questo array in modo da sommarli fra di loro e dividerli per quanti sono per avere come risultato la MEDIA dei voti
+
+//TODO: creare una funzione che genera la media dei voti
+
+//TODO: creare un elenco array nuovo che deve contenere gli studenti ma in questo il nome e cognome sono uniti col cognome per primo e al posto dei voti c'è solo la media dei voti
+
+//------------------------------FUNCTIONS----------------------------
 
 
-//-------------------------------------------------------
-
-//numero random di 5 cifre
+//genera 1 numero random di 5 cifre
 function randomNumber5 (){
   return Math.floor(Math.random() * (99999 - 10000 + 1) + 10000);
 }
 
-
+//genera 5 numeri random
 function votiRandom() {
   let voti = []
   for (let i = 0; i < 5; i++) {
     const numeroRandom = generateRandomNumber(voti, 18, 30);
     voti.push(numeroRandom);
   }
-
   return voti;
 }
 
