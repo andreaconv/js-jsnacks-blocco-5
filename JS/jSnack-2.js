@@ -63,12 +63,28 @@ const studenti = [
 console.log(studenti)
 
 //TODO: trovare il modo per prendere l'array dei voti di ogni singolo studente
+const votiTullio = studenti[0].voti;
+console.log(studenti[0].firstname, votiTullio)
+console.log(studenti[0].firstname, studenti[0].voti)
+console.log(studenti[1].firstname, studenti[1].voti)
+console.log(studenti[2].firstname, studenti[2].voti)
 
 //TODO: prendere gli elementi di questo array in modo da sommarli fra di loro e dividerli per quanti sono per avere come risultato la MEDIA dei voti
+
+
 
 //TODO: creare una funzione che genera la media dei voti
 
 //TODO: creare un elenco array nuovo che deve contenere gli studenti ma in questo il nome e cognome sono uniti col cognome per primo e al posto dei voti c'è solo la media dei voti
+
+
+
+
+
+
+
+
+
 
 //------------------------------FUNCTIONS----------------------------
 

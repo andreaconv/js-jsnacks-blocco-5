@@ -55,11 +55,18 @@ const utenti = [
 ]
 console.log(utenti)
 
+const minorenni = utenti.filter(utente => utente.age < 18);
+console.warn(minorenni)
+
+
+const senior = utenti.filter(utente => utente.age > 65);
+console.warn(senior)
+
 for (let i in utenti) {
   const utente = utenti[i];
 
   if(utente.age < 18){
-    console.warn("MINORENNE", utente.firstname, utente.lastname, utente.age)
+    console.log("MINORENNE", utente.firstname, utente.lastname, utente.age)
   }else if(utente.age > 64){
     console.log("SENIOR", utente.firstname, utente.lastname, utente.age)
   }
