@@ -62,9 +62,7 @@ const studenti = [
 ];
 console.log("Array studenti", studenti)
 
-//TODO: trovare il modo per prendere l'array dei voti di ogni singolo studente
-//TODO: prendere gli elementi di questo array in modo da sommarli fra di loro e dividerli per quanti sono per avere come risultato la MEDIA dei voti
-//TODO: creare un elenco array nuovo che deve contenere gli studenti ma in questo il nome e cognome sono uniti col cognome per primo e al posto dei voti c'è solo la media dei voti
+//creare un elenco array nuovo che deve contenere gli studenti ma in questo il nome e cognome sono uniti col cognome per primo e al posto dei voti c'è solo la media dei voti
 
 const studentiNew = studenti.map(studente => {
   const obj = {
@@ -78,11 +76,12 @@ const studentiNew = studenti.map(studente => {
 console.log("studentiNew", studentiNew)
 
 //------------------------------FUNCTIONS----------------------------
-//TODO: creare una funzione che genera la media dei voti
+//funzione che genera la media dei voti
 
 function mediaVoti(studente) {
   let somma = 0;
   const { voti } = studente;
+  // con il ciclo FOR prendo l'array dei voti di ogni singolo studente
   for (let i = 0; i < voti.length; i++){
     somma += voti [i];
   }
