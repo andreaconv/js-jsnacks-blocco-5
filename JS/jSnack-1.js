@@ -53,14 +53,16 @@ const utenti = [
     age: 66
   }
 ]
-console.log(utenti)
+console.log("utenti", utenti)
 
 const minorenni = utenti.filter(utente => utente.age < 18);
-console.warn(minorenni)
-
+console.warn("minorenni", minorenni)
 
 const senior = utenti.filter(utente => utente.age > 65);
-console.warn(senior)
+console.warn("senior", senior)
+
+//alternativa
+console.log("↓ ciclo direttamente gli utenti senza inserirli in una variante ↓")
 
 for (let i in utenti) {
   const utente = utenti[i];
