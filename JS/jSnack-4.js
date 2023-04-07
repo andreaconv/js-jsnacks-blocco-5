@@ -49,21 +49,27 @@ const studenti = [
 
 const studMaiuscolo = [];
 
-const studOver70 = [];
-
-const studOver120 = [];
-
 //1.
 studenti.forEach(studente => {
   studMaiuscolo.push(studente.name.toUpperCase())
 });
 
-//FIXME: PROBLEMA: come copiare un array di oggetti e sostituire i nomi con l'array maiuscolo?
+console.log("studenti in maiuscolo", studMaiuscolo)
 
 //2. 
-// studenti.forEach(studente => {
-//   if (studente.grades > 70)
-//     studOver70.push(studente.grades)
-// })
+const studOver70 = studenti.filter(studente => {
+  if (studente.grades > 70){
+    return true;
+  }
+})
 
-console.log(studMaiuscolo)
+console.log("array studenti con voto sopra i 70", studOver70)
+
+//3. 
+const studOver120 = studenti.filter(studente => {
+  if (studente.grades > 70 && studente.id > 120){
+    return true;
+  }
+})
+
+console.log("con voto sopra i 70 e ID sopra i 120", studOver120)
