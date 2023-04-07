@@ -47,14 +47,15 @@ ES (Marco della Rovere => MARCO DELLA ROVERE);
 superiore a 120 
 
 Questo è l’elenco degli studenti: <br>
-- Id  Name                             Grades
-- 213 Marco della Rovere    78
-- 110 Paola Cortellessa       96
-- 250 Andrea Mantegna 	    48
-- 145 Gaia Borromini           74
-- 196 Luigi Grimaldello 	    68
-- 102 Piero della Francesca 50
-- 120 Francesca da Polenta  84
+| Id | Name                 | Grades |
+|--- |---                   |---     |
+|213 |Marco della Rovere    |78
+110  |Paola Cortellessa     |96
+250  |Andrea Mantegna       |48
+145  |Gaia Borromini        |74
+196  |Luigi Grimaldello     |68
+102  |Piero della Francesca |50
+120  |Francesca da Polenta  |84
 
 (NB: Si inverte l’ordine delle lezioni objects 3 e 2)
 
