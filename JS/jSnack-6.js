@@ -111,18 +111,29 @@ const squadre = [
     falliSubiti: 0
   },
 ];
+console.log("squadre", squadre)
 
-console.log(squadre)
-
-const squadreNew = squadre.map(squadra => {
+//aggiungo un numero random ai punti e ai falli subiti
+squadre.forEach(squadra => {
   squadra.puntiFatti = generateRandomNumber();
   squadra.falliSubiti = generateRandomNumber();
-}) 
+})
 
 
+//destrutturazione
+const squadreNew = squadre.map(team => {
+  const { nome, falliSubiti } = team;
+  const obj = {
+    nome,
+    falliSubiti
+  }
+  return obj;
+})
+
+console.log("squadreNew", squadreNew)
 
 //---------FUNCTIONS------------
 
-function generateRandomNumber () {
+function generateRandomNumber() {
   return Math.floor(Math.random() * (50 - 1 + 1) + 1);
 }
