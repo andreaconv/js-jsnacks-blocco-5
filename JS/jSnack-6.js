@@ -8,3 +8,121 @@ falli subiti e stampiamo tutto in console.
 BONUS
 Stampare in pagina oltre che in console!
 */
+
+const squadre = [
+  {
+    nome: "Atalanta",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Bologna",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Cremonese",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Empoli",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Fiorentina",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Inter",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Juventus",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Lazio",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Lecce",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Milan",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Monza",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Napoli",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Roma",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Salernitana",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Sampdoria",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Sassuolo",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Spezia",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Torino",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Udinese",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+  {
+    nome: "Verona",
+    puntiFatti: 0,
+    falliSubiti: 0
+  },
+];
+
+console.log(squadre)
+
+const squadreNew = squadre.map(squadra => {
+  squadra.puntiFatti = generateRandomNumber();
+  squadra.falliSubiti = generateRandomNumber();
+}) 
+
+
+
+//---------FUNCTIONS------------
+
+function generateRandomNumber () {
+  return Math.floor(Math.random() * (50 - 1 + 1) + 1);
+}
