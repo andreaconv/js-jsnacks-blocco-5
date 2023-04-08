@@ -33,7 +33,7 @@ const studenti = [
     firstname: "Capsula",
     lastname: "Nucleo",
     matricola: randomNumber5(),
-    voti: votiRandom
+    voti: votiRandom()
   },
   {
     firstname: "Mila",
